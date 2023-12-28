@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Contraseñas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Kalnia&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-marco">
+            <h1> 
+                Generador de contraseñas
+            </h1>
+            
+            <input id="text-contrasena" type="text" disabled/>
+
+            <div class="container-range">
+                <label for="min-length">6</label>
+                <input id="range" type="range" min="6" max="10" step="1" />
+                <label for="max-length">10</label>
+            </div>
+
+            <div class="container-settings">
+                <div class="checkbox">
+                    <input type="checkbox" id="uppercase" name="uppercase" checked>
+                    <label for="uppercase">Incluir mayusculas</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="lowercase" name="lowercase" checked>
+                    <label for="lowercase">Incluir minusculas</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="number" name="number" checked>
+                    <label for="number">Incluir números</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="symbol" name="symbol" checked>
+                    <label for="symbol">Incluir simbolos</label>
+                </div>
+            </div>
+    
+            <button id="btn-generate" onclick="validarCampos()">
+                Generar contraseña
+            </button>
+            
+        </div>
+    </div>
+  
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
